@@ -27,7 +27,9 @@ export default function Register() {
     } else {
       toast.success("Registrasi Berhasil", { autoClose: false });
       toast.success(JSON.stringify(result.data), { autoClose: false });
-      // router.push("/");
+      setTimeout(() => {
+        router.push("/");
+      }, 20000);
     }
   };
 

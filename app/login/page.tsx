@@ -30,7 +30,9 @@ export default function Login() {
         toast.success(JSON.stringify(response.data), {
           autoClose: false,
         });
-        // router.push("/");
+        setTimeout(() => {
+          router.push("/");
+        }, 20000);
       }
     }
   };
